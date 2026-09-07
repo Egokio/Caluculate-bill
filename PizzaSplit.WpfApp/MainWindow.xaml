@@ -1,0 +1,20 @@
+﻿<Window x:Class="PizzaSplit.WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaSplit.WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="p" HorizontalAlignment="Left" Height="40" Margin="60,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141"><Run Text="People"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="T" HorizontalAlignment="Left" Height="23" Margin="66,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"><Run Text="total"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="calculate" Content="Button" HorizontalAlignment="Left" Height="50" Margin="400,110,0,0" VerticalAlignment="Top" Width="141" Click="count_Click" />
+        <TextBlock x:Name="Tip" HorizontalAlignment="Left" Height="19" Margin="60,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Text="Tip"/>
+        <CheckBox x:Name="TipsCheck" Content="CheckBox" HorizontalAlignment="Left" Margin="181,196,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Height="38" Width="104"/>
+        <TextBox x:Name="total" HorizontalAlignment="Left" Margin="180,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="total_TextChanged"/>
+        <TextBox x:Name="people" HorizontalAlignment="Left" Margin="180,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Result" Content="Label" HorizontalAlignment="Left" Margin="522,282,0,0" VerticalAlignment="Top" Height="67" Width="139" FontSize="20" FontFamily="Segoe UI Variable Display Semibold"/>
+
+    </Grid>
+</Window>
