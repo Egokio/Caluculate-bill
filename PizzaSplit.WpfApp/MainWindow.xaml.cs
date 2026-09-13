@@ -35,7 +35,7 @@ namespace PizzaSplit.WpfApp
                 MessageBox.Show("Sisesta korrektne sööjate arv");
                 return;
             }
-            int result = BillCalculator.Bill(summa, people1,TipsCheck.IsChecked ?? false);
+            double result = BillCalculator.Bill(summa, people1,TipsCheck.IsChecked ?? false);
             Result.Content = result.ToString();
         }
 
